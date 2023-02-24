@@ -20,3 +20,4 @@ Reference the documents here for customizing the notifications and zones:
 
 https://user-images.githubusercontent.com/116332087/221282197-e7bee3a0-1c79-4a38-bfbe-b8eb77d1da5b.mp4
 
+*I know the video quality is ass, just use your looking holes or imagination*
