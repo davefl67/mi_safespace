@@ -1,3 +1,6 @@
+-- for reference to edit the zones: 
+-- https://overextended.github.io/docs/ox_lib/Zones/Client
+
 function onEnterPillbox(self)
     -- Notification
     lib.notify({
@@ -9,7 +12,7 @@ function onEnterPillbox(self)
             backgroundColor = '#19ff90',
             color = '#ffffff'
         },
-        icon = 'shield-halved',
+        icon = 'shield',
         iconColor = '#ffffff'
     })
 
@@ -26,19 +29,18 @@ function onExitPillbox(self)
             backgroundColor = '#ff7e1c',
             color = '#ffffff'
         },
-        icon = 'shield-halved',
+        icon = 'shield',
         iconColor = '#ffffff'
     })
 
 end
 
--- 364.17, -592.174, 28.683, 343.343 (Pillbox Hospital)
+-- -684.173, -891.12, 24.499, 86.398
 local pillbox = lib.zones.box({
-    coords = vec3(364.17, -592.174, 28.683),
-    size = vec3(5, 5, 4),
-    rotation = 15,
+    coords = vec3(-684.173, -891.12, 24.499),
+    size = vec3(2, 2, 2),
+    rotation = 0,
     debug = true, -- Remember to disable when you are done setting the area
-    inside = inside,
     onEnter = onEnterPillbox,
     onExit = onExitPillbox
 })

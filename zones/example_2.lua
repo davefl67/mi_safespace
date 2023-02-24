@@ -1,3 +1,6 @@
+-- for reference to edit the zones: 
+-- https://overextended.github.io/docs/ox_lib/Zones/Client
+
 function onEnterDangerZone(self)
     -- Notification
     lib.notify({
@@ -6,10 +9,10 @@ function onEnterDangerZone(self)
         description = 'Trespassing here is a felony offence',
         position = 'top',
         style = {
-            backgroundColor = '#19ff90',
+            backgroundColor = '#ff7e1c', 
             color = '#ffffff'
         },
-        icon = 'shield-halved',
+        icon = 'eye',
         iconColor = '#ffffff'
     })
 
@@ -23,22 +26,20 @@ function onExitDangerZone(self)
         description = 'Turn yourself in. Or don\'t, I don\'t care',
         position = 'top',
         style = {
-            backgroundColor = '#ff7e1c',
+            backgroundColor = '#19ff90',
             color = '#ffffff'
         },
-        icon = 'shield-halved',
+        icon = 'eye-slash',
         iconColor = '#ffffff'
     })
 
 end
 
--- -889.686, -853.515, 20.566, 271.256 (Little Seoul Gate)
-local pillbox = lib.zones.box({
-    coords = vec3(-889.686, -853.515, 20.566),
-    size = vec3(3, 3, 3),
-    rotation = 15,
+-- -684.252, -886.079, 24.499, 103.913
+local Danger_1 = lib.zones.sphere({
+    coords = vec3(-684.252, -886.079, 24.499),
+    radius = 1,
     debug = true, -- Remember to disable when you are done setting the area
-    inside = inside,
-    onEnter = onEnterPillbox,
-    onExit = onExitPillbox
+    onEnter = onEnterDangerZone,
+    onExit = onExitDangerZone
 })

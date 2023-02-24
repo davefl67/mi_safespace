@@ -6,7 +6,7 @@ game                        'gta5'
 
 name                        'MI_SafeSpace'
 author                      'MIAgimir'
-version                     '0.0.1'
+version                     '1.0.0'
 repository                  'https://github.com/MIAgimir/MI_SafeSpace'
 description                 'Ox_Lib based script for creating server safe zones'
 
@@ -27,5 +27,5 @@ shared_scripts {
 }
 
 client_scripts {
-	'zones/example.lua'
+	'zones/*.lua'
 }
