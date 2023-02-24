@@ -1,9 +1,9 @@
-function onEnterPillbox(self)
+function onEnterDangerZone(self)
     -- Notification
     lib.notify({
-        id = 'Pillbox_E',
-        title = 'Entering Pillbox General Hospital',
-        description = 'Weapons are not permitted',
+        id = 'DangerZone_E',
+        title = 'Entering Restricted Area',
+        description = 'Trespassing here is a felony offence',
         position = 'top',
         style = {
             backgroundColor = '#19ff90',
@@ -15,12 +15,12 @@ function onEnterPillbox(self)
 
 end
 
-function onExitPillbox(self)
+function onExitDangerZone(self)
     -- Notification
     lib.notify({
-        id = 'Pillbox_L',
-        title = 'Leaving Pillbox General Hospital',
-        description = 'Have a healthy, wonderful day',
+        id = 'DangerZone_L',
+        title = 'Leaving Restricted Area',
+        description = 'Turn yourself in. Or don\'t, I don\'t care',
         position = 'top',
         style = {
             backgroundColor = '#ff7e1c',
@@ -37,7 +37,7 @@ local pillbox = lib.zones.box({
     coords = vec3(-889.686, -853.515, 20.566),
     size = vec3(3, 3, 3),
     rotation = 15,
-    debug = true,
+    debug = true, -- Remember to disable when you are done setting the area
     inside = inside,
     onEnter = onEnterPillbox,
     onExit = onExitPillbox

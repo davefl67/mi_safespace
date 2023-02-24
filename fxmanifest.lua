@@ -27,5 +27,5 @@ shared_scripts {
 }
 
 client_scripts {
-	'client/main.lua'
+	'zones/example.lua'
 }
