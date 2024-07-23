@@ -1,3 +1,10 @@
+Since most of you fuckers don't read, let me make this as simple as simple can be.
+
+*I offer this repo to the world as a **courtesy**. I forked it before the original author dropped off the planet and the repo went 404 and was lost. I'm neither a developer nor a programmer. I do not offer support for this repo.*
+
+Don't contact me on GitHub, Discord, or via any other medium for support for MIAgimir's resources. You may [reach them here](https://github.com/Mesa-Indigo).
+
+---
 
 # MI_SafeSpace
 Ox_Lib based script for creating custom zones in your server. I know it may look terribly simple, but I am using this to learn the ox framework and I'm having fun with this. I have set up 3 example locations with entering / leaving notifications for some use and inspiration:
